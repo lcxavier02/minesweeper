@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscaminas</title>
+</head>
+<body>
+  <main class="d-flex justify-content-center mt-4">
+    <div id="game-container" class="game-container-easy">
+      <select class="form-select" id="game-level" >
+        <option value="easy">Facil</option>
+        <option value="normal">Normal</option>
+        <option value="pro">Dificil</option>
+      </select>
+
+      <div id="app" class="app">
+        <div id="status-bar" class="status-bar">
+          <div class="flags"><span id="flags-remaining"></span></div>
+          <div class="face smiley-face" id="restart"></div>
+          <div class="timer"><span id="time-counter"></span></div>
+        </div>
+        <div class="board-easy" id="board"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
